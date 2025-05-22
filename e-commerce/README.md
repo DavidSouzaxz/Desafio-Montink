@@ -1,12 +1,50 @@
-# React + Vite
+# 🛒 Desafio Frontend - E-commerce de Produto Único
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como parte de um **desafio técnico para uma vaga de desenvolvedor frontend**. A aplicação simula uma página de e-commerce para visualização de um único produto, com funcionalidades como galeria de imagens, seleção de variantes (tamanho e cor), e verificação de entrega via CEP.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📸 **Galeria de Imagens** interativa do produto.
+- 🎨 **Seleção de Cor** e **Tamanho** com atualização dinâmica do estado.
+- 📦 **Verificador de Entrega por CEP**, com consumo de uma **API externa**.
+- 💾 **Persistência local automática**: as seleções do usuário (imagem, cor, tamanho, CEP) são salvas no `localStorage` por até 15 minutos.
 
-## Expanding the ESLint configuration
+## 🖼️ Demonstração
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Demonstração do Projeto](./src/assets/img1.jpg)  
+*Interface limpa, responsiva e com foco na experiência do usuário.*
+
+## 🛠️ Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- JavaScript (ES6+)
+- API externa para consulta de CEP (como `viacep.com.br`)
+- LocalStorage para persistência dos dados temporários
+
+## 📂 Estrutura do Projeto
+
+src/  
+│  
+├── components/  
+│ ├── ProductGallery.jsx  
+│ ├── VariantSelector.jsx  
+│ └── DeliveryChecker.jsx  
+│  
+├── pages/  
+│ └── ProductPage.jsx  
+│  
+├── assets/  
+│ └── img1.jpg ...  
+│  
+├── css/  
+│ └── ProductPage.css  
+│  
+└── App.jsx  
+
+📫 Contato
+Desenvolvido por David Souza
+📱 linkedin.com/in/davidsouza-coder
+
+💡 Este projeto foi desenvolvido com foco em boas práticas de desenvolvimento, código limpo e experiência do usuário. Agradeço pela oportunidade!
+
